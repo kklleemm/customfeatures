@@ -1,0 +1,25 @@
+T::T( void ) {
+	std::cout << "constructor" << std::endl;
+	return;
+}
+
+T::T( T const &rhs) {
+	(void)rhs;
+	std::cout << "T copy constructor" << std::endl;
+	return ;
+}
+
+T::~T( void ) {
+	std::cout << "T destructor" << std::endl;
+	return ;
+}
+
+T 				&T::operator=( T const &rhs) {
+	(void)rhs;
+	return *this;
+}
+
+//std::ostream 	&operator<<( std::ostream &o, T const &rhs ) {
+//	o << rhs;
+//	return o;
+//}

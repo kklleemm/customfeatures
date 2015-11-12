@@ -1,0 +1,8 @@
+class T {
+	public:
+		T (); // Constructor
+		T (const T &rhs); // Copy constructor
+		~T (); // Destructor
+		T &operator=(const T &rhs); // = operator
+	private:
+};
